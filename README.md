@@ -23,9 +23,9 @@ an open source pastebin with runnable snippets and API.
 
 
 ##### docker
-    ┌──────────────────┐
-    │  glot-container  │
-    │  ┌────────────┐  │
-    │  │  glot-run  │  │
-    │  └────────────┘  │
-    └──────────────────┘
+    ┌────────────────────────┐
+    │    glot-containers     │
+    │  ┌──────────────────┐  │
+    │  │ glot-code-runner │  │
+    │  └──────────────────┘  │
+    └────────────────────────┘
