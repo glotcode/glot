@@ -10,16 +10,16 @@ an open source pastebin with runnable snippets and API.
 - [glot-containers](https://github.com/prasmussen/glot-containers)
 
 ### Overview
-      snippets.glot.io               glot.io                   run.glot.io
-    ┌──────────────────┐       ┌──────────────────┐       ┌──────────────────┐
-    │  glot-snippets   │◀──────│     glot-www     │──────▶│     glot-run     │
-    └──────────────────┘       └──────────────────┘       └──────────────────┘
-              │                          │                          │
-              │                          │                          │
-              ▼                          ▼                          ▼
-    ┌──────────────────┐       ┌──────────────────┐       ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─
-    │     couchdb      │       │    postgresql    │              docker      │
-    └──────────────────┘       └──────────────────┘       └ ─ ─ ─ ─ ─ ─ ─ ─ ─
+      snippets.glot.io                  glot.io                     run.glot.io
+    ┌──────────────────┐   http   ┌──────────────────┐   http   ┌──────────────────┐
+    │  glot-snippets   │◀─────────│     glot-www     │─────────▶│     glot-run     │
+    └──────────────────┘          └──────────────────┘          └──────────────────┘
+              │                             │                             │
+         http │                             │                        http │
+              ▼                             ▼                             ▼
+    ┌──────────────────┐          ┌──────────────────┐          ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─
+    │     couchdb      │          │    postgresql    │                 docker      │
+    └──────────────────┘          └──────────────────┘          └ ─ ─ ─ ─ ─ ─ ─ ─ ─
 
 
 ##### docker
