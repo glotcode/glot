@@ -29,3 +29,6 @@ an open source pastebin with runnable snippets and API.
     │  │ glot-code-runner │  │
     │  └──────────────────┘  │
     └────────────────────────┘
+
+### Instructions for adding a new language
+[https://github.com/prasmussen/glot/wiki/Instructions-for-adding-a-new-language-to-glot.io](https://github.com/prasmussen/glot/wiki/Instructions-for-adding-a-new-language-to-glot.io)
