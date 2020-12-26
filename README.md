@@ -2,12 +2,14 @@
 an open source pastebin with runnable snippets and API.
 
 
-### Components
+### Services
 - [glot-www](https://github.com/prasmussen/glot-www) - glot.io website
 - [glot-snippets](https://github.com/prasmussen/glot-snippets) - snippets api
-- [glot-run](https://github.com/prasmussen/glot-run) - code runner api
-- [glot-code-runner](https://github.com/prasmussen/glot-code-runner) - code runner tool
-- [glot-containers](https://github.com/prasmussen/glot-containers) - docker containers
+- [docker-run](https://github.com/glotcode/docker-run) - code runner api
+- [glot-run](https://github.com/glotcode/glot-run) - docker run user management
+- [code-runner](https://github.com/glotcode/code-runner) - code runner tool
+- [glot-images](https://github.com/glotcode/glot-images) - docker images
+
 
 ### Overview
       snippets.glot.io                  glot.io                     run.glot.io
@@ -17,18 +19,19 @@ an open source pastebin with runnable snippets and API.
               │                             │                             │
          http │                             │                        http │
               ▼                             ▼                             ▼
-    ┌──────────────────┐          ┌──────────────────┐          ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─
-    │     couchdb      │          │    postgresql    │                 docker      │
-    └──────────────────┘          └──────────────────┘          └ ─ ─ ─ ─ ─ ─ ─ ─ ─
-
-
+    ┌──────────────────┐          ┌──────────────────┐          ┌──────────────────┐
+    │     couchdb      │          │    postgresql    │          │    docker-run    │
+    └──────────────────┘          └──────────────────┘          └──────────────────┘
+                                                                          │
+                                                                          │
+                                                                          ▼
+                                                                ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─
+                                                                       docker      │
+                                                                └ ─ ─ ─ ─ ─ ─ ─ ─ ─
 ##### docker
     ┌────────────────────────┐
-    │    glot-containers     │
+    │      glot-images       │
     │  ┌──────────────────┐  │
-    │  │ glot-code-runner │  │
+    │  │   code-runner    │  │
     │  └──────────────────┘  │
     └────────────────────────┘
-
-### Instructions for adding a new language
-[https://github.com/prasmussen/glot/wiki/Instructions-for-adding-a-new-language-to-glot.io](https://github.com/prasmussen/glot/wiki/Instructions-for-adding-a-new-language-to-glot.io)
