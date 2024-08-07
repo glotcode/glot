@@ -6,7 +6,7 @@ an open source pastebin with runnable snippets and API.
 
 | Name                                                   | Description
 |:-------------------------------------------------------|:------------------------------|
-| [glot-www](https://github.com/glotcode/glot-www)       | glot.io website and API       |
+| [glot-app](https://github.com/glotcode/glot-app)       | glot.io website               |
 | [docker-run](https://github.com/glotcode/docker-run)   | Code runner api               |
 | [glot-images](https://github.com/glotcode/glot-images) | Docker images                 |
 | [code-runner](https://github.com/glotcode/code-runner) | Code runner                   |
