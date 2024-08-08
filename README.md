@@ -1,5 +1,5 @@
 # glot
-an open source pastebin with runnable snippets and API.
+an open source code playground.
 
 
 ### Components
